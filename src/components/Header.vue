@@ -59,7 +59,7 @@
             &:active .line-blue {
                 display: block;
                 border: 1px solid rgb(12,124,236);
-                width: 80%;
+                width: 100%;
                 margin: 0 auto;
                 }
             a {
@@ -68,8 +68,9 @@
                 color: black;
                 font-size: 0.7em;
                 text-transform: uppercase;
-                padding: 2em 0.5em;
+                padding: 5em 0.5em;
                 height: 90%;
+                border-bottom:1px solid white ;
                 &:hover,
                 &:active,
                 &.active {
@@ -77,7 +78,7 @@
                 }
             }
             .line-blue {
-                display: none;
+                border:1px solid white;
             }
         }
     }
