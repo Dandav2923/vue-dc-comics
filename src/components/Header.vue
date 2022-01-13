@@ -68,7 +68,7 @@
                 color: black;
                 font-size: 0.7em;
                 text-transform: uppercase;
-                padding: 5em 0.5em;
+                padding: 6em 0.5em;
                 height: 90%;
                 border-bottom:1px solid white ;
                 &:hover,
