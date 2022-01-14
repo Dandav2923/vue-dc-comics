@@ -1,12 +1,26 @@
 <template>
     <div class="container-main">
-        
+        <div class="container-main-top">
+
+        </div>
+        <div class="container-main-bottom">
+            <Product 
+                v-for="(product, index) in products"
+                :key="index"
+                :thumb="product.thumb"
+                :alt="product.series"
+                :series="product.series"
+            />
+        </div>
     </div>
 </template> 
 <script>
-
+import Product from "./Product.vue";
 export default {
     name: "Main",
+    components: {
+        Product,
+    },
     data() {
         return {
             title: "Lista Prodotti",
@@ -92,7 +106,21 @@ export default {
 <style lang="scss" scoped>
     @import "../assets/scss/partials/_variables.scss";
     .container-main {
-        height: 350px;
-        background-color: black;
+        height: 1000px;
+        .container-main-top {
+            background-image: url(../assets/img/jumbotron.jpg);
+            height: 400px;
+        }
+        .container-main-bottom {
+            // height: 600px;
+            background-color: black;
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
     }
+
+
+
 </style>

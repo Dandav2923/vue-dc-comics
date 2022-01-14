@@ -40,6 +40,8 @@
 </script>
 <style lang="scss" scoped>
     @import "../assets/scss/partials/_variables.scss";
+    @import "../assets/scss/partials/_commons.scss";
+
     .container-header {
         display: flex;
         width: 80%;
@@ -62,19 +64,20 @@
                 width: 100%;
                 margin: 0 auto;
                 }
-            a {
-                display: block;
-                text-decoration: none;
-                color: black;
-                font-size: 0.7em;
-                text-transform: uppercase;
-                padding: 6em 0.5em;
-                height: 90%;
-                border-bottom:1px solid white ;
-                &:hover,
-                &:active,
-                &.active {
-                    color: $text-bg-color-blue;
+                a {
+                    display: block;
+                    text-decoration: none;
+                    color: black;
+                    font-size: 0.7em;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    padding: 6em 0.5em;
+                    height: 90%;
+                    border-bottom:1px solid white ;
+                    &:hover,
+                    &:active,
+                    &.active {
+                        color: $text-bg-color-blue;
                 }
             }
             .line-blue {
