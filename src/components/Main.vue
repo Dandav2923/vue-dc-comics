@@ -120,6 +120,7 @@ export default {
         .container-main-bottom {
             width: 80%;
             margin: 0 auto;
+            padding: 1em 0;
             display: flex;
             flex-wrap: wrap;
         }
@@ -129,7 +130,10 @@ export default {
             padding: 0.3em 1em;
             margin: 1em;
             background-color: $text-bg-color-blue;
-
+            h2 {
+                padding: 0 2em;
+                text-transform: uppercase;
+            }
         }
         .container-current-series {
             display: inline-block;
@@ -140,6 +144,11 @@ export default {
             position: absolute;
             top : 35.5%;
             left: 180px;
+            h2 {
+                padding: 0 1em;
+                font-size: 1.5em;
+                text-transform: uppercase;
+            }
         }
     }
 </style>
