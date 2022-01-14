@@ -1,8 +1,6 @@
 <template>
     <div class="container-main">
-        <div class="container-main-top">
-
-        </div>
+        <div class="container-main-top"></div>
         <div class="container-main-bottom">
             <Product 
                 v-for="(product, index) in products"
@@ -11,6 +9,12 @@
                 :alt="product.series"
                 :series="product.series"
             />
+        </div>
+        <div class="container-loadmore">
+            <h2>Load More</h2>
+        </div>
+        <div class="container-current-series">
+            <h2>Current Series</h2>
         </div>
     </div>
 </template> 
@@ -106,11 +110,13 @@ export default {
 <style lang="scss" scoped>
     @import "../assets/scss/partials/_variables.scss";
     .container-main {
-        height: 1000px;
         background-color: black;
+        text-align: center;
+        position: relative;
         .container-main-top {
             background-image: url(../assets/img/jumbotron.jpg);
             height: 400px;
+            margin: 2em 0;
         }
         .container-main-bottom {
             width: 80%;
@@ -118,8 +124,23 @@ export default {
             display: flex;
             flex-wrap: wrap;
         }
+        .container-loadmore {
+            display: inline-block;
+            color: white;
+            padding: 0.3em 1em;
+            margin: 1em;
+            background-color: $text-bg-color-blue;
+
+        }
+        .container-current-series {
+            display: inline-block;
+            color: white;
+            padding: 0.3em 1em;
+            margin: 1em;
+            background-color: $text-bg-color-blue;
+            position: absolute;
+            top : 35%;
+            left: 180px;
+        }
     }
-
-
-
 </style>

@@ -1,9 +1,6 @@
 <template>
     <div class="footer">
         <div class="container-footer-bis">
-        <div class="container-footer-top">
-
-        </div>
         <div class="container-footer-bottom">
             <ul class="container-list">
                 <li>
@@ -86,10 +83,6 @@
 
 <style lang="scss" scoped>
     @import "../assets/scss/partials/_variables.scss";
-    .container-footer-top {
-        height: 150px;
-        background-color: black;
-    }
     .container-footer-bottom {
         height: 200px;
         background-color: $text-bg-color-blue;
