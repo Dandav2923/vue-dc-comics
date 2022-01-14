@@ -116,7 +116,6 @@ export default {
         .container-main-top {
             background-image: url(../assets/img/jumbotron.jpg);
             height: 400px;
-            margin: 2em 0;
         }
         .container-main-bottom {
             width: 80%;

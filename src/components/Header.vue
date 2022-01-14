@@ -3,34 +3,24 @@
         <img src="../assets/img/dc-logo.png" alt="">
         <ul class="container-link">
             <li><a href="#">Charatters</a>
-                <hr class="line-blue">
             </li>
             <li><a class="active" href="#">Comics</a>
-                <hr class="line-blue">
             </li>
             <li><a href="#">Movies</a>
-                <hr class="line-blue">
             </li>
             <li><a href="#">Tv</a>
-                <hr class="line-blue">
             </li>
             <li><a href="#">Games</a>
-                <hr class="line-blue">
             </li>
             <li><a href="#">Collectibles</a>
-                <hr class="line-blue">
             </li>
             <li><a href="#">Videos</a>
-                <hr class="line-blue">
             </li>
             <li><a href="#">Fans</a>
-                <hr class="line-blue">
             </li>
             <li><a href="#">News</a>
-                <hr class="line-blue">
             </li>
             <li><a href="#">Shop</a>
-                <hr class="line-blue">
             </li>
         </ul>
     </div>
@@ -46,7 +36,6 @@
         display: flex;
         width: 80%;
         margin: 0 auto;
-        height: 150px;
         justify-content: center;
         justify-content: space-between;
         align-items: center;
@@ -56,11 +45,12 @@
         list-style-type: none;
         li {
             height: 100%;
-            margin: 5px;
-            &:hover .line-blue ,
-            &:active .line-blue {
+            padding:  5px 5px 0 5px;
+            border-bottom:3px solid white;
+            &:hover,
+            &:active {
                 display: block;
-                border: 1px solid rgb(12,124,236);
+                border-bottom: 3px solid rgb(12,124,236);
                 width: 100%;
                 margin: 0 auto;
                 }
@@ -73,7 +63,6 @@
                     text-transform: uppercase;
                     padding: 6em 0.5em;
                     height: 90%;
-                    border-bottom:1px solid white ;
                     &:hover,
                     &:active,
                     &.active {
@@ -85,5 +74,4 @@
             }
         }
     }
-
 </style>
