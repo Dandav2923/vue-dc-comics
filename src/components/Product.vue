@@ -33,7 +33,7 @@
         h2 {
             width: 100%;
             color: white;
-            font-size: 0.8em;
+            font-size: 0.7em;
             text-transform: uppercase;
             padding: 0.8em 0 0 0;
         }

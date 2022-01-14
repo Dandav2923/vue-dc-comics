@@ -139,7 +139,7 @@ export default {
             margin: 1em;
             background-color: $text-bg-color-blue;
             position: absolute;
-            top : 35%;
+            top : 35.5%;
             left: 180px;
         }
     }
