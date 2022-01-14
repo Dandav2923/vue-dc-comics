@@ -107,13 +107,12 @@ export default {
     @import "../assets/scss/partials/_variables.scss";
     .container-main {
         height: 1000px;
+        background-color: black;
         .container-main-top {
             background-image: url(../assets/img/jumbotron.jpg);
             height: 400px;
         }
         .container-main-bottom {
-            // height: 600px;
-            background-color: black;
             width: 80%;
             margin: 0 auto;
             display: flex;

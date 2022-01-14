@@ -1,14 +1,13 @@
 <template>
-    <div>
         <div class="product">
-            <img 
-                :class="color"
-                :src="thumb"
-                :alt="alt"
-            >
+            <div class="container-img">
+                <img 
+                    :src="thumb"
+                    :alt="alt"
+                >
+            </div>
+            <h2>{{series}}</h2>
         </div>
-        <h2>{{series}}</h2>
-    </div>
 </template>
 
 <script>
@@ -20,13 +19,23 @@
 
 <style lang="scss">
     .product {
-        flex-basis: calc((100%/6) - 0.4em);
+        flex-basis: calc(( 100% / 6) - 0.4em);
         margin: 0.2em;
         padding: 1em;
-        img {
-            width: 150px;
-            height: 150px;
+        .container-img {
+            overflow: hidden;
+            width: 200px;
+            height: 200px;
+            img{
+                width: 100%;
+            }
+        }
+        h2 {
+            width: 100%;
+            color: white;
+            font-size: 0.8em;
+            text-transform: uppercase;
+            padding: 0.8em 0 0 0;
         }
     }
-
 </style>
